@@ -1,0 +1,14 @@
+R_DEF: Internal format may change without notice
+local
+id btnTestNext
+id btnTestPlayPause
+id btnTestSpotify
+id btnTestVolDown
+id btnTestVolUp
+id open_accessibility
+id service_status
+layout activity_main
+string accessibility_description
+string app_name
+style AppTheme
+xml accessibility_service_config

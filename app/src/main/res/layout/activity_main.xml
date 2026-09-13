@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rumi Spotify Controller"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/service_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enable the service, then Rumi can ask it to select a Spotify search result and press Play. This works only while the phone is unlocked and Spotify is visible." />
+
+    <Button
+        android:id="@+id/open_accessibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Open Accessibility Settings" />
+
+    <Button
+        android:id="@+id/btnTestSpotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test: Play 'Love Me Not'" />
+
+    <Button
+        android:id="@+id/btnTestPlayPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Test: Play / Pause" />
+
+    <Button
+        android:id="@+id/btnTestNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Test: Next Track" />
+
+    <Button
+        android:id="@+id/btnTestVolUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Test: Volume Up" />
+
+    <Button
+        android:id="@+id/btnTestVolDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Test: Volume Down" />
+</LinearLayout>

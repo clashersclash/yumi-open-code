@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rumi Controller</string>
+    <string name="accessibility_description">Lets your personal Rumi voice assistant operate Spotify search results after you request playback.</string>
+</resources>

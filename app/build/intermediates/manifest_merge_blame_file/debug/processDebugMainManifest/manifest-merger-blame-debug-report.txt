@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rumi.controller"
+4    android:versionCode="6"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- 🔥 FIX: Added permissions to keep the app alive in the background -->
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:5:5-77
+12-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:5:22-74
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+13-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:6:5-92
+13-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:6:22-89
+14
+15    <queries>
+15-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:8:5-10:15
+16        <package android:name="com.spotify.music" />
+16-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:9:9-53
+16-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:9:18-50
+17    </queries>
+18
+19    <application
+19-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:12:5-53:19
+20        android:allowBackup="false"
+20-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:13:9-36
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:label="Yumi Controller Plug-in"
+23-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:14:9-48
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity
+25-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:17:9-24:20
+26            android:name="com.rumi.controller.MainActivity"
+26-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:18:13-41
+27            android:exported="true" >
+27-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:19:13-36
+28            <intent-filter>
+28-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:20:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:21:17-69
+29-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:21:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:22:17-77
+31-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <receiver
+35-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:26:9-34:20
+36            android:name="com.rumi.controller.PlayRequestReceiver"
+36-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:27:13-48
+37            android:exported="true" >
+37-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:28:13-36
+38            <intent-filter>
+38-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:29:13-33:29
+39                <action android:name="com.rumi.voiceassistant.PLAY_SPOTIFY" />
+39-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:30:17-79
+39-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:30:25-76
+40                <action android:name="com.rumi.voiceassistant.MEDIA_CONTROL" />
+40-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:31:17-80
+40-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:31:25-77
+41                <action android:name="com.rumi.voiceassistant.VOLUME_CONTROL" />
+41-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:32:17-81
+41-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:32:25-78
+42            </intent-filter>
+43        </receiver>
+44
+45        <service
+45-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:36:9-47:19
+46            android:name="com.rumi.controller.SpotifyAccessibilityService"
+46-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:37:13-56
+47            android:exported="true"
+47-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:40:13-36
+48            android:label="Yumi Controller Plug-in"
+48-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:38:13-52
+49            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+49-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:39:13-79
+50            <intent-filter>
+50-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:41:13-43:29
+51                <action android:name="android.accessibilityservice.AccessibilityService" />
+51-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:42:17-92
+51-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:42:25-89
+52            </intent-filter>
+53
+54            <meta-data
+54-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:44:13-46:72
+55                android:name="android.accessibilityservice"
+55-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:45:17-60
+56                android:resource="@xml/accessibility_service_config" />
+56-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:46:17-69
+57        </service>
+58        <service
+58-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:49:9-52:61
+59            android:name="com.rumi.controller.RumiForegroundService"
+59-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:50:13-50
+60            android:exported="false"
+60-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:51:13-37
+61            android:foregroundServiceType="mediaPlayback" />
+61-->C:\Users\Radio\Documents\Codex\2026-09-10\ho\outputs\RumiController\app\src\main\AndroidManifest.xml:52:13-58
+62    </application>
+63
+64</manifest>

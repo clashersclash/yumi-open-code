@@ -1,0 +1,12 @@
+com.rumi.controller:xml/accessibility_service_config = 0x7f050000
+com.rumi.controller:style/AppTheme = 0x7f040000
+com.rumi.controller:id/open_accessibility = 0x7f010005
+com.rumi.controller:string/accessibility_description = 0x7f030000
+com.rumi.controller:string/app_name = 0x7f030001
+com.rumi.controller:layout/activity_main = 0x7f020000
+com.rumi.controller:id/service_status = 0x7f010006
+com.rumi.controller:id/btnTestVolDown = 0x7f010003
+com.rumi.controller:id/btnTestPlayPause = 0x7f010001
+com.rumi.controller:id/btnTestVolUp = 0x7f010004
+com.rumi.controller:id/btnTestSpotify = 0x7f010002
+com.rumi.controller:id/btnTestNext = 0x7f010000

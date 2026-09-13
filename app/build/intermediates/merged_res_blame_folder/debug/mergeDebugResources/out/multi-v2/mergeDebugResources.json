@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.rumi.controller.app-debug-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Radio\\Documents\\Codex\\2026-09-10\\ho\\outputs\\RumiController\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,1",
+                        "startColumns": "4,4",
+                        "startOffsets": "69,16",
+                        "endColumns": "152,52",
+                        "endOffsets": "217,64"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,208",
+                        "endColumns": "152,52",
+                        "endOffsets": "203,256"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Radio\\Documents\\Codex\\2026-09-10\\ho\\outputs\\RumiController\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "216"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "261",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "461"
+                    }
+                }
+            ]
+        }
+    ]
+}

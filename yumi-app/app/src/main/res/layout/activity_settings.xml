@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/yumi_background" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Provider settings"
+            android:textColor="@color/yumi_primary_text" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:text="Choose where Yumi sends requests. Your key is never included in the APK."
+            android:textColor="@color/yumi_secondary_text" />
+        <Spinner android:id="@+id/providerSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" />
+        <LinearLayout android:id="@+id/geminiFields" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <EditText android:id="@+id/geminiKeyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gemini API key" android:inputType="textPassword" />
+            <EditText android:id="@+id/geminiModelInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gemini model" />
+            <Button android:id="@+id/geminiGuideButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Gemini key guide" android:textAllCaps="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/openAiFields" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <EditText android:id="@+id/openAiKeyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="OpenAI API key" android:inputType="textPassword" />
+            <EditText android:id="@+id/openAiModelInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="OpenAI model" />
+            <Button android:id="@+id/openAiGuideButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open OpenAI key guide" android:textAllCaps="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ollamaFields" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <EditText android:id="@+id/ollamaUrlInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ollama server URL (for example http://192.168.1.20:11434)" android:inputType="textUri" />
+            <EditText android:id="@+id/ollamaModelInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ollama model name" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Frequent call contacts" android:textColor="@color/yumi_primary_text" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Comma-separated names exactly as saved in Contacts. Yumi only looks them up after you ask to call." android:textColor="@color/yumi_secondary_text" />
+        <EditText android:id="@+id/trustedContactsInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="For example: Mom, Alex, Dr. Khan" android:inputType="textCapWords" />
+        <Button android:id="@+id/saveSettingsButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Save settings" android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>
